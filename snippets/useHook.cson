@@ -1,0 +1,65 @@
+'.source.js':
+  'React:Component':
+    'prefix': 'useHook'
+    'description': 'Simple Hook component'
+    'leftLabelHTML': 'HooksComponent'
+    'rightLabelHTML': 'Scrabble:Component'
+    'body': """
+        import React, { useEffect, useReducer } from 'react';
+        import { connect } from 'react-redux';
+        import { bindActionCreators } from 'redux';
+
+        const initialState = {
+          ${2:STATE}: ${3:VALUE}
+        };
+
+        function stateReducer(state, action) {
+          switch (action.type) {
+            case ${4:ACTION_TYPE}:
+              return {
+                ...state,
+                ${2:STATE}: ${5:VALUE}
+              };
+            default:
+              return state;
+          }
+        }
+
+        const ${1:COMPONENT_NAME} = (props) => {
+          const [state, dispatch] = useReducer(stateReducer, initialState);
+          // setState can be achived by dispatching.
+          // dispatch({ type: 'ACTION_TYPE', payload: VALUE });
+
+          // Similar to componentDidMount and componentDidUpdate:
+          useEffect(
+            () => {
+              // do something after render
+
+              // Similar to componentWillUnmount
+              return () => {
+                // do something when component unmounts
+              };
+            },
+            []
+          );
+
+          return (
+            <div className="container">
+
+            </div>
+          );
+        };
+
+        const mapStateToProps = (state) => ({
+
+        });
+
+        const mapDispatchToProps = dispatch => bindActionCreators({
+
+        }, dispatch);
+
+        export default connect(
+          mapStateToProps,
+          mapDispatchToProps
+        )(${1:COMPONENT_NAME});
+    """

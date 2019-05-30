@@ -1,0 +1,23 @@
+{
+  "name": "scrabble",
+  "author": "naveen",
+  "version": "1.0.0",
+  "description": "Hold on to something",
+  "license": "MIT",
+  "keywords": [
+    "React",
+    "Redux",
+    "Hooks",
+    "Scrabble"
+  ],
+  "repository": "https://github.com/shnaveen25/scrabble",
+  "homepage": "https://github.com/shnaveen25/scrabble#readme",
+  "bugs": {
+    "url": "https://github.com/shnaveen25/scrabble/issues"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
