@@ -1,7 +1,7 @@
 {
   "name": "scrabble",
   "author": "naveen",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Hold on to something",
   "license": "MIT",
   "keywords": [
@@ -16,7 +16,6 @@
     "url": "https://github.com/shnaveen25/scrabble/issues"
   },
   "readmeFilename": "README.md",
-  "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
