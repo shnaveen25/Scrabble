@@ -1,0 +1,28 @@
+'.source.js':
+  'React:LifecycleMethods:useEffect':
+    'prefix': 'useEffect'
+    'description': 'Similar to componentDidMount and componentDidUpdate'
+    'leftLabelHTML': 'LifecycleMethods'
+    'rightLabelHTML': 'Scrabble:useEffect'
+    'body': """
+        // Similar to componentDidMount and componentDidUpdate:
+        useEffect(
+          () => {
+            // do something after render
+
+            // Similar to componentWillUnmount
+            return () => {
+              // do something when component unmounts
+            };
+          },
+          []
+        );
+    """
+  'React:LifecycleMethods:useState':
+    'prefix': 'useState'
+    'description': 'Similar to componentDidMount and componentDidUpdate'
+    'leftLabelHTML': 'state'
+    'rightLabelHTML': 'Scrabble:useState'
+    'body': """
+        const [${1:STATE_VARIABLE}, ${2:FUNCTION}] = useState(${3:INITIAL_VALUE});
+    """
